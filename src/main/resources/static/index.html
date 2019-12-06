@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Spring Boot File Upload / Download Rest API Example</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <noscript>
+            <h2>Sorry! Your browser doesn't support Javascript</h2>
+        </noscript>
+        <div class="upload-container">
+            <div class="upload-header">
+                <h2>Spring Boot File Upload / Download Rest API Example</h2>
+            </div>
+            <div class="upload-content">
+                <div class="single-upload">
+                    <h3>Upload Single File</h3>
+                    <form id="singleUploadForm" name="singleUploadForm">
+                        <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />
+                        <button type="submit" class="btn btn-success">Upload file</button>
+                    </form>
+                    <div class="upload-response">
+                        <div id="singleFileUploadError"></div>
+                        <div id="singleFileUploadSuccess"></div>
+                    </div>
+                </div>
+                <div class="multiple-upload">
+                    <h3>Upload Multiple Files</h3>
+                    <form id="multipleUploadForm" name="multipleUploadForm">
+                        <input id="multipleFileUploadInput" type="file" name="files" class="file-input" multiple required />
+                        <button type="submit" class="btn btn-success">Upload files</button>
+                    </form>
+                    <div class="upload-response">
+                        <div id="multipleFileUploadError"></div>
+                        <div id="multipleFileUploadSuccess"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/main.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    </body>
+</html>
